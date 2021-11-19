@@ -8,16 +8,17 @@
 </head>
 <body>
     <h1>Favorite Video Games</h1>
-    <form id = New-Item>
-        <div id="#name-input">
-            <lable for="title">Please Enter Title</lable>
-            <input type="text" required>
+    <form id = New-Game>
+        <div id="#Title-input">
+            <lable for="Title" >Please Enter Title</lable>
+            <input type="text" placeholder="Title" required>
 
         </div>
 
         <div id= "platform-select">
-            <label for="platform">Please Select Platform</label>
-            <select>
+            <label for="platform" >Please Select Platform</label>
+            <select required>
+                <option selected disabled>Please Select</option>
                 <option >PlayStation</option>
                 <option>X Box</option>
                 <option>PC</option>
@@ -25,20 +26,15 @@
         </div>
 
         <div id="release-date">
-            <label for="release-date">Release Date</label>
-            <input id="release=date" type ="text" required>
+            <label for="release-date" >Release Date</label>
+            <input id="release=date" type ="date" placeholder="Release-Date" required>
             
         </div>
-            
-
-
-            <!-- enter release date -->
-            <!-- date input -->
-
+        <input value="Add Game" type="submit">
     </form>
-    <div id="Games List">
         <h1 id="Game-List-Head"> Games List</h1>
-    </div>
+        <ul id="Games-List"></ul>
+
      
     
 </body>
