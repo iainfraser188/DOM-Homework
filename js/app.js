@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
     const deleteButton = document.createElement('Button');
     deleteButton.textContent = "Delete all";
+    const form = document.querySelector("form");
+    form.appendChild(deleteButton);
     deleteButton.addEventListener('click', handleDeleteClick)
     
     
@@ -41,6 +43,6 @@ const createGameListItem = function(form){
     
 };
 const handleDeleteClick = function(event){
-    const gameList = document.querySelector('#GamesList');
+    const gameList = document.querySelector('#Games-List');
     gameList.innerHTML='';
 }
